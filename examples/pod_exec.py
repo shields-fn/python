@@ -70,7 +70,7 @@ def exec_commands(api_instance):
     exec_command = [
         '/bin/sh',
         '-c',
-        'echo This message goes to stderr; echo This message goes to stdout']
+        'echo This message goes to stdout']
     resp = stream(api_instance.connect_get_namespaced_pod_exec,
                   name,
                   'default',
